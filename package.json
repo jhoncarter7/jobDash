@@ -7,8 +7,11 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --pretty --transpile-only  api/server.ts "
-  },
+  "dev": "ts-node-dev --respawn --pretty --transpile-only api/server.ts",
+  "build": "tsc",
+  "start": "node dist/server.js"
+},
+
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
